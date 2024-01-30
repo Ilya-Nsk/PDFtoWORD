@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: E:\АРХИВ\БГУ АРХИВ\PDFtoWORD.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{242C90E2-224D-4131-82D1-F3C98A31AC7F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AssemblyName>PDFtoWORD</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="_003CModule_003E.cs" />
+    <Compile Include="PDFtoWORD_ProcessedByFody.cs" />
+    <Compile Include="Costura\AssemblyLoader.cs" />
+    <Compile Include="PDFtoWORD\Program.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="costura.metadata" />
+    <EmbeddedResource Include="costura\costura\dll.compressed" />
+    <EmbeddedResource Include="costura\costura\pdb.compressed" />
+    <EmbeddedResource Include="costura\microsoft\win32\primitives\dll.compressed" />
+    <EmbeddedResource Include="costura\sautinsoft\pdffocus\dll.compressed" />
+    <EmbeddedResource Include="costura\system\appcontext\dll.compressed" />
+    <EmbeddedResource Include="costura\system\console\dll.compressed" />
+    <EmbeddedResource Include="costura\system\diagnostics\diagnosticsource\dll.compressed" />
+    <EmbeddedResource Include="costura\system\diagnostics\tracing\dll.compressed" />
+    <EmbeddedResource Include="costura\system\globalization\calendars\dll.compressed" />
+    <EmbeddedResource Include="costura\system\io\compression\dll.compressed" />
+    <EmbeddedResource Include="costura\system\io\compression\zipfile\dll.compressed" />
+    <EmbeddedResource Include="costura\system\io\dll.compressed" />
+    <EmbeddedResource Include="costura\system\io\filesystem\dll.compressed" />
+    <EmbeddedResource Include="costura\system\io\filesystem\primitives\dll.compressed" />
+    <EmbeddedResource Include="costura\system\linq\dll.compressed" />
+    <EmbeddedResource Include="costura\system\linq\expressions\dll.compressed" />
+    <EmbeddedResource Include="costura\system\net\http\dll.compressed" />
+    <EmbeddedResource Include="costura\system\net\sockets\dll.compressed" />
+    <EmbeddedResource Include="costura\system\reflection\dll.compressed" />
+    <EmbeddedResource Include="costura\system\runtime\dll.compressed" />
+    <EmbeddedResource Include="costura\system\runtime\extensions\dll.compressed" />
+    <EmbeddedResource Include="costura\system\runtime\interopservices\dll.compressed" />
+    <EmbeddedResource Include="costura\system\runtime\interopservices\runtimeinformation\dll.compressed" />
+    <EmbeddedResource Include="costura\system\security\cryptography\algorithms\dll.compressed" />
+    <EmbeddedResource Include="costura\system\security\cryptography\encoding\dll.compressed" />
+    <EmbeddedResource Include="costura\system\security\cryptography\primitives\dll.compressed" />
+    <EmbeddedResource Include="costura\system\security\cryptography\x509certificates\dll.compressed" />
+    <EmbeddedResource Include="costura\system\text\regularexpressions\dll.compressed" />
+    <EmbeddedResource Include="costura\system\xml\readerwriter\dll.compressed" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
